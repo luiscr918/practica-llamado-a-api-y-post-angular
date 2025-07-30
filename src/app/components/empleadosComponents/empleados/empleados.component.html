@@ -1,0 +1,29 @@
+<div class="flex items-center justify-center mt-7">
+   <div class="overflow-x-auto">
+        <table class="w-full bg-white shadow-md rounded-lg border border-gray-200">
+            <thead>
+                <tr class="border-b">
+                    <th class="px-6 py-4 text-left text-gray-600 font-medium">Nombre Empleado</th>
+                    <th class="px-6 py-4 text-left text-gray-600 font-medium">Gender</th>
+                    <th class="px-6 py-4 text-left text-gray-600 font-medium">Status</th>
+                    <th class="px-6 py-4 text-left text-gray-600 font-medium">Species</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (empleado of empleados;track empleado.id){
+                <tr class="border-b">
+                    <td class="px-6 py-4 flex items-center gap-4">
+                        <img class="h-10" src={{empleado.image}}>
+                        <div>
+                            <p class="text-gray-800 font-medium">{{empleado.name}}</p>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">{{empleado.gender}}</td>
+                    <td class="px-6 py-4">{{empleado.status}}</td>
+                    <td class="px-6 py-4 font-semibold text-gray-900">{{empleado.species}}</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,8 +1,29 @@
 <nav class="bg-gray-800 text-white py-3 px-4 flex items-center justify-between">
-    <a class="font-bold text-xl tracking-tight" href="#">My Site</a>
-    <div class="flex items-center">
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" routerLink="">Home</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" routerLink="clientes">Clientes</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="empleados">Empleados</a>
-    </div>
+  <a class="font-bold text-xl tracking-tight" href="#">My Site</a>
+  <div class="flex items-center">
+    <a
+      class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700"
+      routerLink=""
+      >Home</a
+    >
+    <a
+      class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700"
+      routerLink="clientes"
+      >Clientes</a
+    >
+    <a
+      class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700"
+      href="empleados"
+      >Empleados</a
+    >
+
+    <button
+      
+      type="button"
+      (click)="cerrarSesion()"
+      class="cursor-pointer text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+    >
+      Cerrar Sesión
+    </button>
+  </div>
 </nav>

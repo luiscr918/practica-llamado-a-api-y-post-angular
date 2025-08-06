@@ -11,7 +11,7 @@ import { AutenticacionService } from '../../services/autenticacion.service';
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
- constructor( private servicioLogin:AutenticacionService,
+ constructor( public servicioLogin:AutenticacionService,
   private router:Router
  ){}
 
